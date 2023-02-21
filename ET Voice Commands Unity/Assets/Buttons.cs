@@ -12,6 +12,13 @@ public class Buttons : MonoBehaviour
     bool ToggleHand = true;
     public TextMeshProUGUI Language;
 
+    public float moveSpeed;
+
+    public Transform orientation;
+
+    float horizontalInput;
+    float verticalInput;
+
     // Start is called before the first frame update
     void Start()
     {
