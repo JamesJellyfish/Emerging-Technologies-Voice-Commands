@@ -30,12 +30,6 @@ public class Buttons : MonoBehaviour
     float horizontalInput;
     float verticalInput;
 
-    // Audio
-    public AudioSource source;
-    public AudioDetection detector;
-
-    public float loudnessSensibility = 100;
-    public float threshold = 0.1f;
     //
 
     private KeywordRecognizer keywordRecognizer;
@@ -65,9 +59,6 @@ public class Buttons : MonoBehaviour
         actions.Add("move back", Back);
         actions.Add("move left", Left);
         actions.Add("move right", Right);
-
-        //actions.Add("turn left", TurnLeft);
-        //actions.Add("turn right", TurnRight);
 
         actions.Add("Desk 1", Desk1);
         actions.Add("Desk 2", Desk2);
@@ -223,16 +214,6 @@ public class Buttons : MonoBehaviour
     {
         help.SetActive(false);
     }
-    
-    //private void TurnLeft()
-    //{
-    //    transform.rotation = new Vector3(0f, -45f, 0f);
-    //}
-
-    //private void TurnRight()
-    //{
-    //    transform.rotation += new Vector3(0f, -45f, 0f);
-    //}
 
     private void Desk1()
     {
